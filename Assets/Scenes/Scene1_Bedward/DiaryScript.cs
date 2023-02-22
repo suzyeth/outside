@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DiaryScript : MonoBehaviour
 {
-    public GameObject Diary1;
+    public GameObject OriginalDiary;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,9 @@ public class DiaryScript : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0)) 
         {
-            Diary1.SetActive(true);
+            OriginalDiary.SetActive(true);
+
+            
         }
 
     }
