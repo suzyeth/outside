@@ -15,6 +15,8 @@ public class DiaryScript : MonoBehaviour
         OriginalDiary.SetActive(true);
         Exit.SetActive(true);
     }
+    
+
     void Start()
     {
         
