@@ -9,6 +9,7 @@ public class Glasses_Blue : MonoBehaviour
     public GameObject Red;
     public GameObject Purple;
     public GameObject Blue;
+    
     // Start is called before the first frame update
 
     private void OnMouseDown()

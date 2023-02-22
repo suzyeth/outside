@@ -5,7 +5,8 @@ using UnityEngine;
 public class Exit : MonoBehaviour
 {
     public GameObject OriginalDiary;
- 
+    public GameObject Diary_Password;
+
 
     // Start is called before the first frame update
 
@@ -17,6 +18,11 @@ public class Exit : MonoBehaviour
             gameObject.SetActive(false);
         }
 
+        if(Diary_Password.activeSelf)
+        {
+            Diary_Password.SetActive(false);
+            gameObject.SetActive(false);
+        }
     }
 
     void Start()

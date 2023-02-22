@@ -9,6 +9,7 @@ public class Glasses_Red : MonoBehaviour
     public GameObject Red;
     public GameObject Purple;
     public GameObject Blue;
+    public GameObject Phone1;
 
     // Start is called before the first frame update
 
@@ -18,6 +19,7 @@ public class Glasses_Red : MonoBehaviour
         {
             Diary_Password.SetActive(true);
             OriginalDiary.SetActive(false);
+            Phone1.SetActive(true);
 
         }
         //if (Blue.activeSelf)
