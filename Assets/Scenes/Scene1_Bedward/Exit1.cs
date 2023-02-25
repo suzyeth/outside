@@ -13,8 +13,6 @@ public class Exit1 : MonoBehaviour
         if(Exit.activeSelf)
         {
             //Exit.SetActive(false);
-            
-
         }
 
 
