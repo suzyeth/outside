@@ -2,25 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DiaryScript : MonoBehaviour
+public class Exit1 : MonoBehaviour
 {
-    public GameObject OriginalDiary;
     public GameObject Exit;
-    public Collider2D Glasses_Red;
-    //public GameObject Exit1;
     
-
     // Start is called before the first frame update
 
     private void OnMouseDown()
     {
-        OriginalDiary.SetActive(true);
-        Exit.SetActive(true);
-        //Exit1.SetActive(true);
-    }
-    
+        if(Exit.activeSelf)
+        {
+            //Exit.SetActive(false);
+            
 
-    void Start()
+        }
+
+
+    }
+        void Start()
     {
         
     }

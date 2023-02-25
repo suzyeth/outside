@@ -6,6 +6,8 @@ public class Exit : MonoBehaviour
 {
     public GameObject OriginalDiary;
     public GameObject Diary_Password;
+    public GameObject Exit1;
+ 
 
 
     // Start is called before the first frame update
@@ -15,14 +17,16 @@ public class Exit : MonoBehaviour
         if (OriginalDiary.activeSelf)
         {
             OriginalDiary.SetActive(false);
-            gameObject.SetActive(false);
+            //Exit1.SetActive(true);
         }
 
         if(Diary_Password.activeSelf)
         {
             Diary_Password.SetActive(false);
-            gameObject.SetActive(false);
+            //Exit1.SetActive(true);
         }
+
+       
     }
 
     void Start()
