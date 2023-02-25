@@ -2,20 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Exit1 : MonoBehaviour
+public class Phone_prop : MonoBehaviour
 {
+    public GameObject Phone_Scene;
+    public GameObject PhoneProp;
+    public GameObject Phone_Password;
+    public GameObject PhoneImages;
     public GameObject Exit;
-    
+
     // Start is called before the first frame update
 
     private void OnMouseDown()
     {
-        //if(Exit.activeSelf)
-        {
-            //Exit.SetActive(false);
-        }
+        //Phone_Password.SetActive(true);
+        Exit.SetActive(true);
+        PhoneImages.SetActive(true);
 
-
+        
     }
         void Start()
     {

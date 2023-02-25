@@ -2,16 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Glasses_prop : MonoBehaviour
+public class Diary_prop : MonoBehaviour
 {
-    public GameObject Glasses_UI;
-    public GameObject Glasses_prop1;
+    public GameObject Diary_Scene;
+    public GameObject DiaryProp;
+    public GameObject Diary_Password;
+    public GameObject OriginalDiary;
+    public GameObject Exit;
     // Start is called before the first frame update
 
     private void OnMouseDown()
     {
-        Glasses_UI.SetActiveRecursively(true);
-        Glasses_prop1.SetActive(false);
+        OriginalDiary.SetActive(true);
+        Exit.SetActive(true);
+        
     }
 
     void Start()

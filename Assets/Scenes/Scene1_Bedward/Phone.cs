@@ -5,8 +5,12 @@ using UnityEngine;
 public class Phone : MonoBehaviour
 {
     public GameObject phoneImages;
-    public GameObject Phone1;
     public GameObject phonepassword;
+    public GameObject Phone_Scene;
+    public GameObject Phone_prop;
+    public GameObject Phone_prop1;
+    public GameObject Exit;
+    public GameObject Diary_prop;
 
     int phone = 0;
     // Start is called before the first frame update
@@ -14,16 +18,23 @@ public class Phone : MonoBehaviour
     private void OnMouseDown()
     {
         phoneImages.SetActive(true);
+        Phone_Scene.SetActive(false);
+        
+        Exit.SetActive(true);
 
-        if(phoneImages.activeSelf)
+        if(Diary_prop.activeSelf == false)
         {
-            phone = 1;
+            
+            Phone_prop1.SetActive(true);
         }
 
-        if (Phone1.activeSelf && phone == 1)
+        if(Diary_prop.activeSelf)
         {
-            phonepassword.SetActive(true);
+            Phone_prop.SetActive(true);
         }
+        
+
+        
     }
 
         void Start()
