@@ -9,6 +9,7 @@ public class Exit : MonoBehaviour
     public GameObject Exit1;
     public GameObject Exit_images;
     public GameObject PhoneImages;
+    public GameObject BlackSquare;
  
 
 
@@ -35,6 +36,8 @@ public class Exit : MonoBehaviour
             PhoneImages.SetActive(false);
             Exit_images.SetActive(false);
         }
+
+        BlackSquare.SetActive(false);
     }
 
     void Start()

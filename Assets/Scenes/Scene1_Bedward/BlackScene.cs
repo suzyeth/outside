@@ -1,15 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class DialogeSystem : MonoBehaviour
+public class BlackScene : MonoBehaviour
 {
-    public GameObject DialogeUI;
-    public Text DialogeText;
-    [TextArea(1, 3)] public string[] DialogeTextList;
-    public int currentIndex;
+    public GameObject Exit;
+    public GameObject BlackSquare;
+
+    
     // Start is called before the first frame update
+
     void Start()
     {
         
@@ -18,6 +18,10 @@ public class DialogeSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Exit.activeSelf)
+        {
+            BlackSquare.SetActive(true);
+
+        }
     }
 }
