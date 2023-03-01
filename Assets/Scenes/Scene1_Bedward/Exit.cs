@@ -20,7 +20,15 @@ public class Exit : MonoBehaviour
     public GameObject Page4;
     public GameObject Page5;
     public GameObject Page6;
- 
+
+    public GameObject BlueVersion;
+    public GameObject RedVersion;
+    public GameObject YellowVersion;
+
+    public GameObject Password1;
+    public GameObject Password2;
+    public GameObject Password3;
+
 
 
     // Start is called before the first frame update
@@ -68,6 +76,41 @@ public class Exit : MonoBehaviour
             Exit_images.SetActive(false);
         }
 
+        if(BlueVersion.activeSelf)
+        {
+            BlueVersion.SetActive(false);
+            Exit_images.SetActive(false);
+        }
+
+        if (RedVersion.activeSelf)
+        {
+            RedVersion.SetActive(false);
+            Exit_images.SetActive(false);
+        }
+
+        if (YellowVersion.activeSelf)
+        {
+            YellowVersion.SetActive(false);
+            Exit_images.SetActive(false);
+        }
+
+        if(Password1.activeSelf)
+        {
+            Password1.SetActive(false);
+            Exit_images.SetActive(false);
+        }
+
+        if (Password2.activeSelf)
+        {
+            Password2.SetActive(false);
+            Exit_images.SetActive(false);
+        }
+
+        if (Password3.activeSelf)
+        {
+            Password3.SetActive(false);
+            Exit_images.SetActive(false);
+        }
     }
 
     void Start()
