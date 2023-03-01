@@ -12,7 +12,7 @@ public class Phone : MonoBehaviour
     public GameObject Exit;
     public GameObject Diary_prop;
 
-    int phone = 0;
+    
     // Start is called before the first frame update
 
     private void OnMouseDown()

@@ -10,6 +10,11 @@ public class Exit : MonoBehaviour
     public GameObject Exit_images;
     public GameObject PhoneImages;
     public GameObject BlackSquare;
+
+    public GameObject PhoneLock;
+    public GameObject PhoneHomePage;
+
+    public GameObject Page1;
  
 
 
@@ -22,6 +27,7 @@ public class Exit : MonoBehaviour
             OriginalDiary.SetActive(false);
             //Exit1.SetActive(true);
             Exit_images.SetActive(false);
+            Page1.SetActive(false);
         }
 
         if(Diary_Password.activeSelf)
@@ -38,6 +44,19 @@ public class Exit : MonoBehaviour
         }
 
         BlackSquare.SetActive(false);
+
+        if(PhoneLock.activeSelf)
+        {
+            PhoneLock.SetActive(false);
+            Exit_images.SetActive(false);
+        }
+
+        if(PhoneHomePage.activeSelf)
+        {
+            PhoneHomePage.SetActive(false);
+            Exit_images.SetActive(false);
+        }
+
     }
 
     void Start()

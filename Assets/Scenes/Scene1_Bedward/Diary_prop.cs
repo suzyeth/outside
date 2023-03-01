@@ -9,12 +9,15 @@ public class Diary_prop : MonoBehaviour
     public GameObject Diary_Password;
     public GameObject OriginalDiary;
     public GameObject Exit;
+
+    public GameObject Page1;
     // Start is called before the first frame update
 
     private void OnMouseDown()
     {
         OriginalDiary.SetActive(true);
         Exit.SetActive(true);
+        Page1.SetActive(true);
         
     }
 

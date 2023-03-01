@@ -8,7 +8,7 @@ public class Nurse : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DialogeSystem.SetActive(true);
+        //DialogeSystem.SetActive(true);
     }
 
     // Update is called once per frame
