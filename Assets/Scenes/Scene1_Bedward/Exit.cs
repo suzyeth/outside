@@ -15,6 +15,11 @@ public class Exit : MonoBehaviour
     public GameObject PhoneHomePage;
 
     public GameObject Page1;
+    public GameObject Page2;
+    public GameObject Page3;
+    public GameObject Page4;
+    public GameObject Page5;
+    public GameObject Page6;
  
 
 
@@ -28,6 +33,12 @@ public class Exit : MonoBehaviour
             //Exit1.SetActive(true);
             Exit_images.SetActive(false);
             Page1.SetActive(false);
+            Page2.SetActive(false);
+            Page3.SetActive(false);
+            Page4.SetActive(false);
+            Page5.SetActive(false);
+            Page6.SetActive(false);
+
         }
 
         if(Diary_Password.activeSelf)
