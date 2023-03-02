@@ -5,9 +5,8 @@ using UnityEngine;
 public class mirror : MonoBehaviour
 {
     
-    float n=1;
+    float n=10;
 
-    public GameObject Mirror;
 
 
     // Start is called before the first frame update
@@ -18,8 +17,11 @@ public class mirror : MonoBehaviour
 
     private void OnMouseDown()
     {
-        //transform.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1 - n);//
-        Mirror.SetActive(false);
+        n = n - 2;
+        transform.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, n/10);
+        /*Mirror.SetActive(false);*/
+
+       
     }
 
 
