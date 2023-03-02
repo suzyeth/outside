@@ -10,7 +10,25 @@ public class Exit : MonoBehaviour
     public GameObject Exit_images;
     public GameObject PhoneImages;
     public GameObject BlackSquare;
- 
+
+    public GameObject PhoneLock;
+    public GameObject PhoneHomePage;
+
+    public GameObject Page1;
+    public GameObject Page2;
+    public GameObject Page3;
+    public GameObject Page4;
+    public GameObject Page5;
+    public GameObject Page6;
+
+    public GameObject BlueVersion;
+    public GameObject RedVersion;
+    public GameObject YellowVersion;
+
+    public GameObject Password1;
+    public GameObject Password2;
+    public GameObject Password3;
+
 
 
     // Start is called before the first frame update
@@ -22,6 +40,13 @@ public class Exit : MonoBehaviour
             OriginalDiary.SetActive(false);
             //Exit1.SetActive(true);
             Exit_images.SetActive(false);
+            Page1.SetActive(false);
+            Page2.SetActive(false);
+            Page3.SetActive(false);
+            Page4.SetActive(false);
+            Page5.SetActive(false);
+            Page6.SetActive(false);
+
         }
 
         if(Diary_Password.activeSelf)
@@ -38,6 +63,54 @@ public class Exit : MonoBehaviour
         }
 
         BlackSquare.SetActive(false);
+
+        if(PhoneLock.activeSelf)
+        {
+            PhoneLock.SetActive(false);
+            Exit_images.SetActive(false);
+        }
+
+        if(PhoneHomePage.activeSelf)
+        {
+            PhoneHomePage.SetActive(false);
+            Exit_images.SetActive(false);
+        }
+
+        if(BlueVersion.activeSelf)
+        {
+            BlueVersion.SetActive(false);
+            Exit_images.SetActive(false);
+        }
+
+        if (RedVersion.activeSelf)
+        {
+            RedVersion.SetActive(false);
+            Exit_images.SetActive(false);
+        }
+
+        if (YellowVersion.activeSelf)
+        {
+            YellowVersion.SetActive(false);
+            Exit_images.SetActive(false);
+        }
+
+        if(Password1.activeSelf)
+        {
+            Password1.SetActive(false);
+            Exit_images.SetActive(false);
+        }
+
+        if (Password2.activeSelf)
+        {
+            Password2.SetActive(false);
+            Exit_images.SetActive(false);
+        }
+
+        if (Password3.activeSelf)
+        {
+            Password3.SetActive(false);
+            Exit_images.SetActive(false);
+        }
     }
 
     void Start()

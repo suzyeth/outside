@@ -10,7 +10,7 @@ public class Glasses_prop : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Glasses_UI.SetActiveRecursively(true);
+        Glasses_UI.SetActive(true);
         Glasses_prop1.SetActive(false);
     }
 

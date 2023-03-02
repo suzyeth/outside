@@ -9,12 +9,41 @@ public class Glasses_Blue : MonoBehaviour
     public GameObject Red;
     public GameObject Purple;
     public GameObject Blue;
-    
+
+    public GameObject BlueVersion;
+    public GameObject Exit;
+
+    public GameObject RedVersion;
+    public GameObject YellowVersion;
+
+    public GameObject DiaryPage6;
+    public GameObject Password3;
+
     // Start is called before the first frame update
 
     private void OnMouseDown()
     {
-        if (OriginalDiary.activeSelf)
+        BlueVersion.SetActive(true);
+        Exit.SetActive(true);
+
+        if (RedVersion.activeSelf)
+        {
+            RedVersion.SetActive(false);
+
+        }
+
+        if (YellowVersion.activeSelf)
+        {
+            YellowVersion.SetActive(false);
+
+        }
+
+        if (DiaryPage6.activeSelf)
+        {
+            Password3.SetActive(true);
+        }
+
+        //if (OriginalDiary.activeSelf)
         {
             
             //OriginalDiary.SetActive(false);

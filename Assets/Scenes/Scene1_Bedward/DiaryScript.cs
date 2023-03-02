@@ -11,6 +11,9 @@ public class DiaryScript : MonoBehaviour
     public GameObject Diary_prop1;
     public GameObject Diary_Scene;
     public GameObject Phone_prop1;
+
+    public GameObject Page1;
+    public GameObject Page1RightCollider;
     //public GameObject Exit1;
     
 
@@ -20,6 +23,8 @@ public class DiaryScript : MonoBehaviour
     {
         OriginalDiary.SetActive(true);
         Exit.SetActive(true);
+        Page1.SetActive(true);
+        //Page1RightCollider.SetActive(true);
       
         Diary_Scene.SetActive(false);
 
