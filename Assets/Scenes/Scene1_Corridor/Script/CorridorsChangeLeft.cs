@@ -6,31 +6,31 @@ using UnityEngine;
 public class CorridorsChangeLeft : MonoBehaviour
 {
     public List<GameObject> Corridors = new List<GameObject>();
-    int i = 0;
-    
+ 
 
     // Start is called before the first frame update
     void Start()
     {
+
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
 
-    
+    }
 
     private void OnMouseDown()
     {
-        i = i + 1;
-      
+        FindObjectOfType<CorridorChange>().movePage(-1);
 
-        Corridors[i].SetActive(false);
-        
+
     }
+
+  
+
+    
 
 
 

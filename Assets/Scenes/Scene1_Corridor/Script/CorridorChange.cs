@@ -1,50 +1,45 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class CorridorChange : MonoBehaviour
 {
 
     public List<GameObject> Corridors = new List<GameObject>();
-    int i = 0;
-    int j = 1;
-    int k = 2;
+    
+    int index;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        index = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (i == 2)
-        {
-            i = 0;
-        }
-        if (j == 2)
-        {
-            j = 0;
-        }
-        if (k == 2)
-        {
-            k = 0;
-        }
-
-
 
     }
 
     private void OnMouseDown()
     {
-        i =i+1;
-        j =j+1;
-        k =k+1;
-
-        Corridors[i].SetActive(true);
-        Corridors[j].SetActive(false);
-        Corridors[k].SetActive(false);
+        movePage(1);
     }
+
+    public void movePage(int direction)
+    {
+        index = index += direction;
+        index = Math.Clamp(index, 0, Corridors.Count-1);
+
+        for (int i = 0; i < Corridors.Count; i++)
+        {
+            Corridors[i].SetActive(i == index);
+        }
+    }
+
+    
 
 
 
