@@ -2,14 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Map : MonoBehaviour
+public class OpenBox : MonoBehaviour
 {
-    public GameObject DoorMap;
+    public GameObject RealHistory;
+    
+
 
     // Start is called before the first frame update
     void Start()
     {
-        DoorMap.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -20,10 +22,8 @@ public class Map : MonoBehaviour
 
     private void OnMouseDown()
     {
-
-        DoorMap.SetActive(true);
-
-
+        RealHistory.SetActive(true);
+        
     }
 
 }
