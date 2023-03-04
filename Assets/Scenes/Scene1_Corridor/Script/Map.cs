@@ -1,37 +1,29 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CorridorsChangeLeft : MonoBehaviour
+public class Map : MonoBehaviour
 {
-    public List<GameObject> Corridors = new List<GameObject>();
-   
+    public GameObject DoorMap;
 
     // Start is called before the first frame update
     void Start()
     {
-
         
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     private void OnMouseDown()
     {
-        FindObjectOfType<CorridorChange>().movePage(-1);
 
-        
+        DoorMap.SetActive(true);
+
+
     }
-
-  
-
-    
-
-
 
 }

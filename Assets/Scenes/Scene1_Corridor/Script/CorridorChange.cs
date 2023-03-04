@@ -10,6 +10,7 @@ public class CorridorChange : MonoBehaviour
     public List<GameObject> Corridors = new List<GameObject>();
     
     int index;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,9 @@ public class CorridorChange : MonoBehaviour
     private void OnMouseDown()
     {
         movePage(1);
+
+        
+
     }
 
     public void movePage(int direction)

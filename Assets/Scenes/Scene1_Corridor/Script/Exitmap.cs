@@ -1,37 +1,31 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CorridorsChangeLeft : MonoBehaviour
+public class Exitmap : MonoBehaviour
 {
-    public List<GameObject> Corridors = new List<GameObject>();
    
+    public GameObject Map;
+
 
     // Start is called before the first frame update
     void Start()
     {
-
         
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     private void OnMouseDown()
     {
-        FindObjectOfType<CorridorChange>().movePage(-1);
-
         
+        Map.SetActive(false);
+
+
     }
-
-  
-
-    
-
-
 
 }
