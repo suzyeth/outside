@@ -29,6 +29,7 @@ public class Exit : MonoBehaviour
     public GameObject Password2;
     public GameObject Password3;
 
+    public GameObject DiaryPage1_Clue;
 
 
     // Start is called before the first frame update
@@ -110,6 +111,11 @@ public class Exit : MonoBehaviour
         {
             Password3.SetActive(false);
             Exit_images.SetActive(false);
+        }
+
+        if(DiaryPage1_Clue.activeSelf)
+        {
+            DiaryPage1_Clue.SetActive(false);
         }
     }
 

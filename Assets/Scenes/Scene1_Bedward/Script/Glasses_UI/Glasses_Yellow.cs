@@ -13,6 +13,10 @@ public class Glasses_Yellow : MonoBehaviour
 
     public GameObject DiaryPage4;
     public GameObject Password2;
+
+    public GameObject DiaryPage1;
+    public GameObject DiaryPage1_Clue;
+
     // Start is called before the first frame update
 
     private void OnMouseDown()
@@ -37,6 +41,11 @@ public class Glasses_Yellow : MonoBehaviour
         if (DiaryPage4.activeSelf)
         {
             Password2.SetActive(true);
+        }
+
+        if (DiaryPage1.activeSelf)
+        {
+            DiaryPage1_Clue.SetActive(true);
         }
     }
         void Start()

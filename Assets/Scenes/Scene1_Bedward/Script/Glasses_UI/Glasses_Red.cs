@@ -2,33 +2,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Glasses_Blue : MonoBehaviour
+public class Glasses_Red : MonoBehaviour
 {
     public GameObject Diary_Password;
     public GameObject OriginalDiary;
     public GameObject Red;
     public GameObject Purple;
     public GameObject Blue;
-
-    public GameObject BlueVersion;
-    public GameObject Exit;
+    public GameObject Phone1;
 
     public GameObject RedVersion;
-    public GameObject YellowVersion;
 
-    public GameObject DiaryPage6;
-    public GameObject Password3;
+    public GameObject Exit;
+    public GameObject YellowVersion;
+    public GameObject BlueVersion;
+
+    public GameObject DiaryPage5;
+
+    public GameObject Password1;
+
+    public GameObject DiaryPage1;
+    public GameObject DiaryPage1_Clue;
+
+
 
     // Start is called before the first frame update
 
     private void OnMouseDown()
     {
-        BlueVersion.SetActive(true);
+        RedVersion.SetActive(true);
         Exit.SetActive(true);
 
-        if (RedVersion.activeSelf)
+       
+        if (BlueVersion.activeSelf)
         {
-            RedVersion.SetActive(false);
+            BlueVersion.SetActive(false);
 
         }
 
@@ -38,23 +46,29 @@ public class Glasses_Blue : MonoBehaviour
 
         }
 
-        if (DiaryPage6.activeSelf)
+        if(DiaryPage5.activeSelf)
         {
-            Password3.SetActive(true);
+            Password1.SetActive(true);
+        }
+
+        if(DiaryPage1.activeSelf)
+        {
+            DiaryPage1_Clue.SetActive(true);
         }
 
         //if (OriginalDiary.activeSelf)
         {
-            
+            //Diary_Password.SetActive(true);
             //OriginalDiary.SetActive(false);
-        }
+            //Phone1.SetActive(true);
 
-        //if(Red.activeSelf)
+        }
+        //if (Blue.activeSelf)
         {
             //Purple.SetActive(true);
         }
+       //Red.SetActive(true);
 
-        //Blue.SetActive(true);
     }
 
     void Start()

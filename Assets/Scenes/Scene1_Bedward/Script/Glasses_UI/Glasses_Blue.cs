@@ -2,38 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Glasses_Red : MonoBehaviour
+public class Glasses_Blue : MonoBehaviour
 {
     public GameObject Diary_Password;
     public GameObject OriginalDiary;
     public GameObject Red;
     public GameObject Purple;
     public GameObject Blue;
-    public GameObject Phone1;
+
+    public GameObject BlueVersion;
+    public GameObject Exit;
 
     public GameObject RedVersion;
-
-    public GameObject Exit;
     public GameObject YellowVersion;
-    public GameObject BlueVersion;
 
-    public GameObject DiaryPage5;
+    public GameObject DiaryPage6;
+    public GameObject Password3;
 
-    public GameObject Password1;
-
-
+    public GameObject DiaryPage1;
+    public GameObject DiaryPage1_Clue;
 
     // Start is called before the first frame update
 
     private void OnMouseDown()
     {
-        RedVersion.SetActive(true);
+        BlueVersion.SetActive(true);
         Exit.SetActive(true);
 
-       
-        if (BlueVersion.activeSelf)
+        if (RedVersion.activeSelf)
         {
-            BlueVersion.SetActive(false);
+            RedVersion.SetActive(false);
 
         }
 
@@ -43,24 +41,28 @@ public class Glasses_Red : MonoBehaviour
 
         }
 
-        if(DiaryPage5.activeSelf)
+        if (DiaryPage6.activeSelf)
         {
-            Password1.SetActive(true);
+            Password3.SetActive(true);
+        }
+
+        if (DiaryPage1.activeSelf)
+        {
+            DiaryPage1_Clue.SetActive(true);
         }
 
         //if (OriginalDiary.activeSelf)
         {
-            //Diary_Password.SetActive(true);
+            
             //OriginalDiary.SetActive(false);
-            //Phone1.SetActive(true);
-
         }
-        //if (Blue.activeSelf)
+
+        //if(Red.activeSelf)
         {
             //Purple.SetActive(true);
         }
-       //Red.SetActive(true);
 
+        //Blue.SetActive(true);
     }
 
     void Start()
