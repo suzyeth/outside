@@ -2,23 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Glasses_Yellow : MonoBehaviour
+public class Glasses_Yellow1 : MonoBehaviour
 {
-
     public GameObject YellowVersion;
-    public GameObject Exit;
 
     public GameObject BlueVersion;
     public GameObject RedVersion;
 
-    public GameObject DiaryPage4;
-    public GameObject Password2;
-
-    public GameObject DiaryPage1;
-    public GameObject DiaryPage1_Clue;
-
     public static float count = 0;
-
     // Start is called before the first frame update
 
     private void OnMouseDown()
@@ -36,18 +27,8 @@ public class Glasses_Yellow : MonoBehaviour
             YellowVersion.SetActive(false);
             count = 0;
         }
-        
-
-        if (DiaryPage4.activeSelf)
-        {
-            Password2.SetActive(true);
-        }
-
-        if (DiaryPage1.activeSelf)
-        {
-            DiaryPage1_Clue.SetActive(true);
-        }
     }
+
         void Start()
     {
         
@@ -56,11 +37,11 @@ public class Glasses_Yellow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (BlueVersion.activeSelf)
+        if(BlueVersion.activeSelf)
         {
             count = 0;
         }
-        if (RedVersion.activeSelf)
+        if(RedVersion.activeSelf)
         {
             count = 0;
         }

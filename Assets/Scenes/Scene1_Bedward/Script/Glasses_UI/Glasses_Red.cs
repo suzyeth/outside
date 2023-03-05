@@ -24,27 +24,32 @@ public class Glasses_Red : MonoBehaviour
     public GameObject DiaryPage1;
     public GameObject DiaryPage1_Clue;
 
+    public static float count = 0;
+
 
 
     // Start is called before the first frame update
 
     private void OnMouseDown()
     {
-        RedVersion.SetActive(true);
-        Exit.SetActive(true);
+        if (count == 0)
+        {
+            RedVersion.SetActive(true);
+            //Exit.SetActive(true);
+            count = 1;
+
+            YellowVersion.SetActive(false);
+            BlueVersion.SetActive(false);
+        }
+        else
+        {
+            RedVersion.SetActive(false);
+            count = 0;
+        }
+        
 
        
-        if (BlueVersion.activeSelf)
-        {
-            BlueVersion.SetActive(false);
-
-        }
-
-        if (YellowVersion.activeSelf)
-        {
-            YellowVersion.SetActive(false);
-
-        }
+        
 
         if(DiaryPage5.activeSelf)
         {
@@ -79,6 +84,13 @@ public class Glasses_Red : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (YellowVersion.activeSelf)
+        {
+            count = 0;
+        }
+        if (BlueVersion.activeSelf)
+        {
+            count = 0;
+        }
     }
 }

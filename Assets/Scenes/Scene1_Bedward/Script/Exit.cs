@@ -77,22 +77,22 @@ public class Exit : MonoBehaviour
             Exit_images.SetActive(false);
         }
 
-        if(BlueVersion.activeSelf)
+        //if(BlueVersion.activeSelf)
         {
-            BlueVersion.SetActive(false);
-            Exit_images.SetActive(false);
+            //BlueVersion.SetActive(false);
+            //Exit_images.SetActive(false);
         }
 
-        if (RedVersion.activeSelf)
+        //if (RedVersion.activeSelf)
         {
-            RedVersion.SetActive(false);
-            Exit_images.SetActive(false);
+            //RedVersion.SetActive(false);
+            //Exit_images.SetActive(false);
         }
 
-        if (YellowVersion.activeSelf)
+        //if (YellowVersion.activeSelf)
         {
-            YellowVersion.SetActive(false);
-            Exit_images.SetActive(false);
+            //YellowVersion.SetActive(false);
+            //Exit_images.SetActive(false);
         }
 
         if(Password1.activeSelf)
