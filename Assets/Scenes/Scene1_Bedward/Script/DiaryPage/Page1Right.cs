@@ -9,9 +9,29 @@ public class Page1Right : MonoBehaviour
     public GameObject Page1RightCollider;
     public GameObject Page2RightCollider;
     public GameObject Page2LeftCollider;
+
+    public GameObject DiaryPage1_Clue;
     // Start is called before the first frame update
+    public GameObject ReftoBlueVersion;
+
+    public GameObject Password2;
+    public GameObject ReftoYellowVersion;
 
 
+    private void OnEnable()
+    {
+        print("hello");
+        print(ReftoBlueVersion.name);
+        print(ReftoBlueVersion.activeSelf);
+
+        if(ReftoBlueVersion.activeSelf)
+        {
+            DiaryPage1_Clue.SetActive(true);
+        }
+
+       
+
+    }
     private void OnMouseDown()
     {
         if(Page1.activeSelf)
@@ -22,6 +42,9 @@ public class Page1Right : MonoBehaviour
             Page2.SetActive(true);
             Page2RightCollider.SetActive(true);
             Page2LeftCollider.SetActive(true);
+
+            
+                
         }
         
     }

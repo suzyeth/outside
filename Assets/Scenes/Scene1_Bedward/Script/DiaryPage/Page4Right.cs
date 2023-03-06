@@ -10,7 +10,19 @@ public class Page4Right : MonoBehaviour
     public GameObject Page5RightCollider;
     public GameObject Page5LeftCollider;
 
+    public GameObject Password2;
+    public GameObject ReftoYellowVersion;
 
+    private void OnEnable()
+    {
+        print(ReftoYellowVersion.name);
+        print(ReftoYellowVersion.activeSelf);
+
+        if (ReftoYellowVersion.activeSelf)
+        {
+            Password2.SetActive(true);
+        }
+    }
     private void OnMouseDown()
     {
         if (Page4.activeSelf)
@@ -22,6 +34,8 @@ public class Page4Right : MonoBehaviour
             Page5RightCollider.SetActive(true);
             Page5LeftCollider.SetActive(true);
         }
+
+       
     }
         // Start is called before the first frame update
         void Start()

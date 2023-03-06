@@ -3202,6 +3202,10 @@ MonoBehaviour:
   Page1RightCollider: {fileID: 846483302}
   Page2RightCollider: {fileID: 229807721}
   Page2LeftCollider: {fileID: 575323151}
+  DiaryPage1_Clue: {fileID: 2055670164}
+  ReftoBlueVersion: {fileID: 1787729145}
+  Password2: {fileID: 867193188}
+  ReftoYellowVersion: {fileID: 1422385664}
 --- !u!61 &846483305
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3776,6 +3780,8 @@ MonoBehaviour:
   Password1: {fileID: 867193188}
   DiaryPage3: {fileID: 803184618}
   DiaryPage5: {fileID: 1124793893}
+  YellowVersion: {fileID: 1422385664}
+  DiaryPage4: {fileID: 827145272}
 --- !u!1 &871145462
 GameObject:
   m_ObjectHideFlags: 0
@@ -4457,6 +4463,8 @@ MonoBehaviour:
   Page4RightCollider: {fileID: 1129708446}
   Page5RightCollider: {fileID: 821162248}
   Page5LeftCollider: {fileID: 1796905396}
+  Password2: {fileID: 867193188}
+  ReftoYellowVersion: {fileID: 1422385664}
 --- !u!1 &1160704561
 GameObject:
   m_ObjectHideFlags: 0

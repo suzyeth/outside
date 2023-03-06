@@ -30,23 +30,30 @@ public class Glasses_Yellow : MonoBehaviour
 
             BlueVersion.SetActive(false);
             RedVersion.SetActive(false);
+
+            if (DiaryPage4.activeSelf)
+            {
+                //Password2.SetActive(true);
+            }
+
+            if (DiaryPage1.activeSelf)
+            {
+                //DiaryPage1_Clue.SetActive(true);
+            }
         }
         else
         {
             YellowVersion.SetActive(false);
+          
+            Password2.SetActive(false);
+            DiaryPage1_Clue.SetActive(false);
+            
             count = 0;
+
         }
+
         
 
-        if (DiaryPage4.activeSelf)
-        {
-            Password2.SetActive(true);
-        }
-
-        if (DiaryPage1.activeSelf)
-        {
-            DiaryPage1_Clue.SetActive(true);
-        }
     }
         void Start()
     {
@@ -56,6 +63,8 @@ public class Glasses_Yellow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         if (BlueVersion.activeSelf)
         {
             count = 0;
