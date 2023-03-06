@@ -14,6 +14,10 @@ public class Page1Right : MonoBehaviour
     // Start is called before the first frame update
     public GameObject ReftoBlueVersion;
 
+    public GameObject Password2;
+    public GameObject ReftoYellowVersion;
+
+
     private void OnEnable()
     {
         print("hello");
@@ -24,6 +28,9 @@ public class Page1Right : MonoBehaviour
         {
             DiaryPage1_Clue.SetActive(true);
         }
+
+       
+
     }
     private void OnMouseDown()
     {

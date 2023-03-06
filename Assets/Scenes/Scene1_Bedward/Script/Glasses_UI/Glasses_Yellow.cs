@@ -45,14 +45,9 @@ public class Glasses_Yellow : MonoBehaviour
         {
             YellowVersion.SetActive(false);
           
+            Password2.SetActive(false);
+            DiaryPage1_Clue.SetActive(false);
             
-
-            if(BlueVersion.activeSelf
-                | RedVersion.activeSelf)
-            {
-                //Password2.SetActive(false);
-                //DiaryPage1_Clue.SetActive(false);
-            }
             count = 0;
 
         }
