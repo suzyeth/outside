@@ -3,16 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - puzzle
+  - puzzle1
+  - puzzle2
+  - puzzle3
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - puzzle1
   - Water
   - UI
-  - 
-  - 
+  - puzzle2
+  - puzzle3
   - 
   - 
   - 

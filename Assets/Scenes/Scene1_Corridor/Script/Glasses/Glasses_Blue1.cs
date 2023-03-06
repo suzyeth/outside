@@ -21,6 +21,10 @@ public class Glasses_Blue1 : MonoBehaviour
         if(count == 0)
         {
             BlueVersion.SetActive(true);
+            Symbol.SetActive(true);
+            DoorSymbol.SetActive(true);
+            LabSymbol.SetActive(true);
+
             count = 1;
 
             YellowVersion.SetActive(false);
@@ -29,16 +33,14 @@ public class Glasses_Blue1 : MonoBehaviour
         else
         {
             BlueVersion.SetActive(false);
-            count = 0;
             Symbol.SetActive(false);
             DoorSymbol.SetActive(false);
             LabSymbol.SetActive(false);
+            count = 0;
+            
         }
 
-        Symbol.SetActive(true);
-        DoorSymbol.SetActive(true);
-        LabSymbol.SetActive(true);
-
+        
 
     }
 

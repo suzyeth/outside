@@ -5,24 +5,37 @@ using UnityEngine;
 public class Klotski : MonoBehaviour
 
   
-
- 
-
 {
     private Rigidbody2D rb;
     private Vector3 mousePosition;
     private Vector3 objectPosition;
     private float distance;// 声明一个浮点数变量，用于记录鼠标与物体的距离
     private bool isDragging;
+    private bool isOnBoard;
+
+    public GameObject Puzzle;
+    public Transform Board;
+
+    public string boardTagIs;
+
+
+
+
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        isOnBoard = false;
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        
+
+
+
+
+            if (Input.GetMouseButtonDown(0) && isOnBoard == false)
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             // 如果碰撞到了物体
@@ -52,6 +65,30 @@ public class Klotski : MonoBehaviour
             transform.position = new Vector3(mousePosition.x + objectPosition.x, mousePosition.y + objectPosition.y, distance);
         }
     }
+
+
+    private void OnTriggerEnter2D(Collider2D coll)
+    {
+        print("Col with " + coll.gameObject.name);
+        print("Tag with " + coll.gameObject.tag);
+
+        if (coll.gameObject.tag == boardTagIs)
+        {
+            Debug.Log("x");
+            Puzzle.transform.position = Board.transform.position;
+            isDragging = false;
+            isOnBoard = true;
+            //Destroy(Puzzle.GetComponent<Klotski>());
+           
+        }
+
+        
+        
+
+
+
+    }
+
 }
 
 
