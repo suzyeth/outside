@@ -26,7 +26,7 @@ public class OpenBox : MonoBehaviour
 
         Cabinet.SetActive(true);
         OtherCabinet.SetActive(false);
-
+        Debug.Log("x");
 
     }
 
