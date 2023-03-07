@@ -1,0 +1,31 @@
+Nurse
+You are recovering quickly, but you will need to stay here for a few more days and we will do more tests to make sure there is nothing else wrong with you. 
+On the table are your personal belongings.
+Another question is, do you have any emergency contacts, we can't find any records of them.
+You cannot leave this room until you have contacted them.
+Monologue
+What are these strange glasses? I've never seen it before.
+Monologue
+You dial the number and after a beep, Vincent's voice comes on the other side of the line.
+Vincent
+"What happened, I went to your house last night to look for you and you weren't at home. 
+I couldn't reach you on the phone either. "
+ME
+Me:"I don't remember what happened before, 
+I'm in Smiths Hospital and the nurse told me I need to give them the information of my emergency contact. "
+Vincent
+"Just stay in the hospital and I will come and get you as soon as I can. "
+Dpctor
+"Hello sir, i wish you are well"
+Me: I.... am fine, But where is this doctor?
+Doctor
+"We are in a hospital which is located on the outskirts of the city."
+Me:  Hospital?What happened to me.
+Doctor
+"If i may know, might i ask why were you found outside unconscious? do you have any recollection of the events which took place before you ended here?"
+Me:  I... Don't..Know, Don't remember anything.
+"Hmm..... might i ask your Name please?"
+Me:  (Name? Name.. What is my name..) 
+ I.... Don't Know.
+ "It seems you have amnesia. Take some rest, we shall help you regain your memory slowly. 
+if you are perhaps feeling bored feel free to look around the area but Don't go beyond limits."

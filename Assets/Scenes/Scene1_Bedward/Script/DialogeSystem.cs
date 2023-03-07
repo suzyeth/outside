@@ -11,6 +11,7 @@ public class DialogeSystem : MonoBehaviour
     public int currentIndex;
 
     public GameObject DialogueSystem;
+    public GameObject DialoguePanel;
     public GameObject Nurse;
 
     [Header("word")]
@@ -20,17 +21,22 @@ public class DialogeSystem : MonoBehaviour
     private void OnMouseDown()
     {
         currentIndex++;
-
-        if(currentIndex < DialogeTextList.Length)
+        
+        if(Nurse.activeSelf)
         {
-            DialogeText.text = DialogeTextList[currentIndex];
+            if (currentIndex < DialogeTextList.Length)
+            {
+                DialogeText.text = DialogeTextList[currentIndex];
 
+            }
+            else
+            {
+                Nurse.SetActive(false);
+                //DialogueSystem.SetActive(false);
+                DialoguePanel.SetActive(false);
+            }
         }
-        else
-        {
-            DialogueSystem.SetActive(false);
-            Nurse.SetActive(false);
-        }
+       
 
     }
 
