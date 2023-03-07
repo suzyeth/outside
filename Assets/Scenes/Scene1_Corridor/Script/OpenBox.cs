@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class OpenBox : MonoBehaviour
 {
-    public GameObject RealHistory;
-    
+   
+    public GameObject Cabinet;
+    public GameObject OtherCabinet;
 
 
     // Start is called before the first frame update
@@ -22,8 +23,11 @@ public class OpenBox : MonoBehaviour
 
     private void OnMouseDown()
     {
-        RealHistory.SetActive(true);
-        
+
+        Cabinet.SetActive(true);
+        OtherCabinet.SetActive(false);
+
+
     }
 
 }

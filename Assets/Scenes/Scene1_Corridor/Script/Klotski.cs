@@ -17,8 +17,7 @@ public class Klotski : MonoBehaviour
     public Transform Board;
 
     public string boardTagIs;
-
-
+    
 
 
 
@@ -64,6 +63,9 @@ public class Klotski : MonoBehaviour
             mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector3(mousePosition.x + objectPosition.x, mousePosition.y + objectPosition.y, distance);
         }
+
+        
+
     }
 
 
@@ -78,8 +80,10 @@ public class Klotski : MonoBehaviour
             Puzzle.transform.position = Board.transform.position;
             isDragging = false;
             isOnBoard = true;
-            //Destroy(Puzzle.GetComponent<Klotski>());
+            
            
+
+            
         }
 
         
