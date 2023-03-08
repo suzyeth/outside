@@ -6,10 +6,12 @@ public class Contact : MonoBehaviour
 {
     public GameObject ContactVincent;
     public GameObject PhoneHomePage;
+    
     // Start is called before the first frame update
 
     private void OnMouseDown()
     {
+        
         ContactVincent.SetActive(true);
         PhoneHomePage.SetActive(false);
     }

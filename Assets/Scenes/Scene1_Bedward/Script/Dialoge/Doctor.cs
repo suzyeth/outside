@@ -6,6 +6,8 @@ public class Doctor : MonoBehaviour
 {
     public GameObject DialogeSystem;
     public GameObject DialogeSystem_Doctor;
+    public GameObject Dialoge_Doctor;
+    
 
     // Start is called before the first frame update
 
@@ -13,6 +15,8 @@ public class Doctor : MonoBehaviour
     {
         DialogeSystem.SetActive(true);
         DialogeSystem_Doctor.SetActive(true);
+        Dialoge_Doctor.SetActive(true);
+        
     }
     void Start()
     {

@@ -8,10 +8,20 @@ public class Page5Right : MonoBehaviour
     public GameObject Page6;
     public GameObject Page5RightCollider;
     public GameObject Page6LeftCollider;
-    
-    
 
+    public GameObject ReftoRedVersion;
+    public GameObject Password1;
 
+    private void OnEnable()
+    {
+        print(ReftoRedVersion.name);
+        print(ReftoRedVersion.activeSelf);
+
+        if (ReftoRedVersion.activeSelf)
+        {
+            Password1.SetActive(true);
+        }
+    }
     private void OnMouseDown()
     {
         if (Page5.activeSelf)

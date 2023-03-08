@@ -11,6 +11,19 @@ public class Page4Left : MonoBehaviour
     public GameObject Page4RightCollider;
     public GameObject Page4LeftCollider;
 
+    public GameObject ReftoYellowVersion;
+    public GameObject Password2;
+
+    private void OnEnable()
+    {
+        print(ReftoYellowVersion.name);
+        print(ReftoYellowVersion.activeSelf);
+
+        if (ReftoYellowVersion.activeSelf)
+        {
+            Password2.SetActive(true);
+        }
+    }
     private void OnMouseDown()
     {
         if (Page4.activeSelf)

@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene1_Bedward/Scene1_Bedward.unity
     guid: 4b3b9e08317f42448940f39cbd20999d
+  - enabled: 1
+    path: Assets/Scenes/Scene1_Corridor/Scene1_Corridor.unity
+    guid: 508348701dfb47347a1b9b79f5396959
   m_configObjects: {}

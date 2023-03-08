@@ -16,6 +16,8 @@ public class DialogeSystem : MonoBehaviour
 
     [Header("word")]
     public TextAsset textfile;
+    public GameObject Dialogue_Nurse;
+    public GameObject DialogueManage_Nurse;
     // Start is called before the first frame update
 
     private void OnMouseDown()
@@ -31,9 +33,13 @@ public class DialogeSystem : MonoBehaviour
             }
             else
             {
+                Destroy(Dialogue_Nurse, 0f);
+                Destroy(DialogueManage_Nurse, 0f);
                 Nurse.SetActive(false);
                 //DialogueSystem.SetActive(false);
                 DialoguePanel.SetActive(false);
+                
+                
             }
         }
        
