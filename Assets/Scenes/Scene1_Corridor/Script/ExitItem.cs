@@ -6,7 +6,7 @@ public class ExitItem : MonoBehaviour
 {
    
     public GameObject Item;
-    public GameObject BlackScene;
+    
 
 
     // Start is called before the first frame update
@@ -23,7 +23,7 @@ public class ExitItem : MonoBehaviour
 
     private void OnMouseDown()
     {
-        BlackScene.SetActive(true);
+        
         Item.SetActive(false);
 
 

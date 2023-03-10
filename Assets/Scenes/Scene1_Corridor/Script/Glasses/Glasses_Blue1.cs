@@ -12,8 +12,8 @@ public class Glasses_Blue1 : MonoBehaviour
     public static float count = 0;
     public GameObject Symbol;
     public GameObject DoorSymbol;
-    public GameObject LabSymbol;
-
+    public GameObject LabSymbol1;
+    public GameObject LabSymbol2;
     public GameObject Map;
 
     // Start is called before the first frame update
@@ -25,7 +25,8 @@ public class Glasses_Blue1 : MonoBehaviour
             BlueVersion.SetActive(true);
             Symbol.SetActive(true);
             DoorSymbol.SetActive(true);
-            LabSymbol.SetActive(true);
+            LabSymbol1.SetActive(true);
+            LabSymbol2.SetActive(true);
 
             if (Map.activeSelf && BlueVersion.activeSelf)
             {
@@ -45,7 +46,8 @@ public class Glasses_Blue1 : MonoBehaviour
             BlueVersion.SetActive(false);
             Symbol.SetActive(false);
             DoorSymbol.SetActive(false);
-            LabSymbol.SetActive(false);
+            LabSymbol1.SetActive(false);
+            LabSymbol2.SetActive(false);
             count = 0;
             
         }
@@ -59,7 +61,8 @@ public class Glasses_Blue1 : MonoBehaviour
         Symbol.SetActive(false);
 
         DoorSymbol.SetActive(false);
-        LabSymbol.SetActive(false);
+        LabSymbol1.SetActive(false);
+        LabSymbol2.SetActive(false);
     }
 
     // Update is called once per frame
