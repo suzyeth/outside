@@ -12,6 +12,7 @@ public class Case_Right : MonoBehaviour
     {
         Page2.SetActive(true);
         Page1.SetActive(false);
+        Debug.Log("press");
     }
     void Start()
     {
