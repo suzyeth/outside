@@ -7,13 +7,16 @@ public class Scene_StartScript : MonoBehaviour
 {
     public Animator StartAnimator;
     AnimatorStateInfo stateinfo;
-    public GameObject Image2;
-
+    public GameObject Click;
     public Animator Start1;
+    public GameObject Black1;
+
+
     private void OnMouseDown()
     {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        Start1.SetTrigger("Play2Ani");
+        Click.SetActive(true);
+        
+        Start1.SetTrigger("Play1Ani");
 
     }
     // Start is called before the first frame update
@@ -29,12 +32,14 @@ public class Scene_StartScript : MonoBehaviour
 
         if (stateinfo.IsName("1") && stateinfo.normalizedTime >= 1.0f)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            Black1.SetActive(true);
+            Start1.SetTrigger("Play2Ani");
+            
         }
 
-        if (stateinfo.IsName("2") && stateinfo.normalizedTime >= 1.0f)
+        //if (stateinfo.IsName("2") && stateinfo.normalizedTime >= 1.0f)
         {
-            Image2.SetActive(true);
+            
         }
     }
 }
