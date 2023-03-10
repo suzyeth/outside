@@ -14,6 +14,8 @@ public class Glasses_Blue1 : MonoBehaviour
     public GameObject DoorSymbol;
     public GameObject LabSymbol;
 
+    public GameObject Map;
+
     // Start is called before the first frame update
 
     private void OnMouseDown()
@@ -25,6 +27,14 @@ public class Glasses_Blue1 : MonoBehaviour
             DoorSymbol.SetActive(true);
             LabSymbol.SetActive(true);
 
+            if (Map.activeSelf && BlueVersion.activeSelf)
+            {
+                Symbol.SetActive(true);
+            }
+            else
+            {
+                Symbol.SetActive(false);
+            }
             count = 1;
 
             YellowVersion.SetActive(false);

@@ -1,13 +1,13 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1102 &-4028152898380291253
+--- !u!1102 &-3695377931225001518
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 1
+  m_Name: 2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -20,13 +20,13 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 803cfbc9aaf17004bbfc1c0a261c3d1b, type: 2}
+  m_Motion: {fileID: 7400000, guid: 89053eae78cb11f4bad4b16bc1b6624b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1101 &-3065315705944260348
+--- !u!1101 &-3486786477249937281
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -35,10 +35,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Play1Ani
+    m_ConditionEvent: Play2Ani
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -4028152898380291253}
+  m_DstState: {fileID: -3695377931225001518}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -62,7 +62,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: -3065315705944260348}
+  - {fileID: -3486786477249937281}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -88,6 +88,12 @@ AnimatorController:
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Play1Ani
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: Play2Ani
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -119,8 +125,8 @@ AnimatorStateMachine:
     m_State: {fileID: -337529862760726544}
     m_Position: {x: 80, y: 250, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -4028152898380291253}
-    m_Position: {x: 383.08487, y: 284.93842, z: 0}
+    m_State: {fileID: -3695377931225001518}
+    m_Position: {x: 292, y: 377, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

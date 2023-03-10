@@ -10,8 +10,13 @@ public class ClosePassword1 : MonoBehaviour
 
     public GameObject YellowVersion;
     public GameObject DiaryPage4;
+
+    public GameObject BlueVersoin;
+    public GameObject RedVersion;
     
     // Start is called before the first frame update
+
+
     void Start()
     {
         
@@ -35,6 +40,10 @@ public class ClosePassword1 : MonoBehaviour
         if(YellowVersion.activeSelf && DiaryPage4.activeSelf)
         {
             Password1.SetActive(true);
+        }
+        else
+        {
+            Password1.SetActive(false);
         }
     }
 }

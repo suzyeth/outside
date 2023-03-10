@@ -2,13 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExitItem : MonoBehaviour
+public class Click : MonoBehaviour
 {
-   
-    public GameObject Item;
-    public GameObject BlackScene;
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -20,13 +15,4 @@ public class ExitItem : MonoBehaviour
     {
         
     }
-
-    private void OnMouseDown()
-    {
-        BlackScene.SetActive(true);
-        Item.SetActive(false);
-
-
-    }
-
 }

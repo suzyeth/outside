@@ -3180,6 +3180,8 @@ MonoBehaviour:
   Password2: {fileID: 602489197}
   DiaryPage4: {fileID: 827145272}
   DiaryPage6: {fileID: 1759477750}
+  RedVersion: {fileID: 1443634006}
+  DiaryPage5: {fileID: 1124793893}
 --- !u!1 &619145786
 GameObject:
   m_ObjectHideFlags: 0
@@ -4556,6 +4558,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Password3: {fileID: 853007104}
   DiaryPage5: {fileID: 1124793893}
+  DiaryPage6: {fileID: 1759477750}
+  BlueVersion: {fileID: 1787729145}
 --- !u!1 &867193188
 GameObject:
   m_ObjectHideFlags: 0
@@ -4658,6 +4662,8 @@ MonoBehaviour:
   DiaryPage5: {fileID: 1124793893}
   YellowVersion: {fileID: 1422385664}
   DiaryPage4: {fileID: 827145272}
+  BlueVersoin: {fileID: 1787729145}
+  RedVersion: {fileID: 1443634006}
 --- !u!1 &871145462
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,6 +20,7 @@ public class Glasses_Red : MonoBehaviour
     public GameObject DiaryPage5;
 
     public GameObject Password1;
+    
 
     public GameObject DiaryPage1;
     public GameObject DiaryPage1_Clue;
@@ -37,6 +38,11 @@ public class Glasses_Red : MonoBehaviour
             RedVersion.SetActive(true);
             //Exit.SetActive(true);
             count = 1;
+
+            if (DiaryPage5.activeSelf && RedVersion.activeSelf)
+            {
+                Password1.SetActive(true);
+            }
 
             YellowVersion.SetActive(false);
             BlueVersion.SetActive(false);
