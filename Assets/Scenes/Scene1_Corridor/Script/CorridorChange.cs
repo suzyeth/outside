@@ -36,6 +36,7 @@ public class CorridorChange : MonoBehaviour
     {
         index = index += direction;
         index = Math.Clamp(index, 0, Corridors.Count-1);
+        Debug.Log("index" + index);
 
         for (int i = 0; i < Corridors.Count; i++)
         {

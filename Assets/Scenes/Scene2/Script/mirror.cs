@@ -17,7 +17,7 @@ public class mirror : MonoBehaviour
 
     private void OnMouseDown()
     {
-        n = n - 2;
+        n = n - 1;
         transform.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, n/10);
         /*Mirror.SetActive(false);*/
 
