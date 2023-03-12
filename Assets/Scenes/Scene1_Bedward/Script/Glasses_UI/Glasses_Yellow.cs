@@ -19,6 +19,7 @@ public class Glasses_Yellow : MonoBehaviour
 
     public static float count = 0;
 
+    public GameObject Yellow_Clue;
     // Start is called before the first frame update
 
     private void OnMouseDown()
@@ -27,7 +28,7 @@ public class Glasses_Yellow : MonoBehaviour
         {
             YellowVersion.SetActive(true);
             count += 1;
-
+            Yellow_Clue.SetActive(true);
             BlueVersion.SetActive(false);
             RedVersion.SetActive(false);
 
@@ -44,6 +45,7 @@ public class Glasses_Yellow : MonoBehaviour
         else
         {
             YellowVersion.SetActive(false);
+            Yellow_Clue.SetActive(false);
           
             Password2.SetActive(false);
             DiaryPage1_Clue.SetActive(false);
@@ -68,10 +70,12 @@ public class Glasses_Yellow : MonoBehaviour
         if (BlueVersion.activeSelf)
         {
             count = 0;
+            Yellow_Clue.SetActive(false);
         }
         if (RedVersion.activeSelf)
         {
             count = 0;
+            Yellow_Clue.SetActive(false);
         }
     }
 }

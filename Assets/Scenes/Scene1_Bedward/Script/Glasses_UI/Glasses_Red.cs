@@ -27,6 +27,7 @@ public class Glasses_Red : MonoBehaviour
 
     public static float count = 0;
 
+    public GameObject Red_Clue;
 
 
     // Start is called before the first frame update
@@ -38,6 +39,7 @@ public class Glasses_Red : MonoBehaviour
             RedVersion.SetActive(true);
             //Exit.SetActive(true);
             count = 1;
+            Red_Clue.SetActive(true);
 
             if (DiaryPage5.activeSelf && RedVersion.activeSelf)
             {
@@ -50,6 +52,7 @@ public class Glasses_Red : MonoBehaviour
         else
         {
             RedVersion.SetActive(false);
+            Red_Clue.SetActive(false);
             count = 0;
         }
         
@@ -93,10 +96,12 @@ public class Glasses_Red : MonoBehaviour
         if (YellowVersion.activeSelf)
         {
             count = 0;
+            Red_Clue.SetActive(false);
         }
         if (BlueVersion.activeSelf)
         {
             count = 0;
+            Red_Clue.SetActive(false);
         }
     }
 }
