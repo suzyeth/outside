@@ -9,6 +9,9 @@ public class IronBoxOpen : MonoBehaviour
     public GameObject KeyInventory;
     public GameObject BoxInventory;
 
+    public GameObject BoxProp;
+    public GameObject BoxInScene;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +32,11 @@ public class IronBoxOpen : MonoBehaviour
             KeyInventory.SetActive(false);
             BoxInventory.SetActive(true);
         }
-        
+
+
+        BoxProp.SetActive(true);
+        BoxInScene.SetActive(false);
+
     }
 
 

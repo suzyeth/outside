@@ -8,7 +8,9 @@ public class RealhistoryInventory : MonoBehaviour
     public GameObject Puzzle;
     
     public GameObject Detect;
-
+    public GameObject Puzzle1;
+    public GameObject Puzzle2;
+    public GameObject Puzzle3;
     //∆¥ÕºÀÈ∆¨ºÏ≤‚
     public GameObject Detect1;
     public GameObject Detect2;
@@ -19,6 +21,8 @@ public class RealhistoryInventory : MonoBehaviour
     int index;
 
     int i = 0;
+
+    
 
 
     // Start is called before the first frame update
@@ -40,6 +44,24 @@ public class RealhistoryInventory : MonoBehaviour
         
         Detect.SetActive(true);
         Countnumber();
+
+        Puzzle.SetActive(false);
+
+        if (Puzzle1.activeSelf)
+        {
+            Puzzle2.SetActive(true);
+            Puzzle1.SetActive(false);
+        }
+        else if (Puzzle2.activeSelf)
+        {
+            Puzzle3.SetActive(true);
+            Puzzle2.SetActive(false);
+        }
+        else
+        {
+            Puzzle1.SetActive(true);
+        }
+
 
     }
 

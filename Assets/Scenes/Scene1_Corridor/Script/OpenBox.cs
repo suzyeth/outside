@@ -8,6 +8,8 @@ public class OpenBox : MonoBehaviour
     public GameObject Cabinet;
     public GameObject OtherCabinet;
 
+    
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,7 @@ public class OpenBox : MonoBehaviour
         Cabinet.SetActive(true);
         OtherCabinet.SetActive(false);
         Debug.Log("x");
+
 
     }
 
