@@ -14,7 +14,7 @@ public class DialogueSystem_Glasses : MonoBehaviour
     public GameObject DialoguePanel;
     public GameObject Text_Glasses;
     public GameObject DialogueManage_Glasses;
-    public GameObject Test;
+    //public GameObject Test;
     // Start is called before the first frame update
 
     private void OnMouseDown()
@@ -25,7 +25,7 @@ public class DialogueSystem_Glasses : MonoBehaviour
         if (currentIndex < DialogeTextList.Length)
         {
             DialogeText.text = DialogeTextList[currentIndex];
-            Test.SetActive(true);
+            //Test.SetActive(true);
         }
         else
         {

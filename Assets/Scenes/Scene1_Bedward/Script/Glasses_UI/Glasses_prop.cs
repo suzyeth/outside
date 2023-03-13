@@ -17,9 +17,9 @@ public class Glasses_prop : MonoBehaviour
         Glasses_UI.SetActive(true);
         Glasses_prop1.SetActive(false);
 
-        //DialogePanel.SetActive(true);
-        //DialogeSystem_Glasses.SetActive(true);
-        //Text_Glasses.SetActive(true);
+        DialogePanel.SetActive(true);
+        DialogeSystem_Glasses.SetActive(true);
+        Text_Glasses.SetActive(true);
     }
 
     void Start()

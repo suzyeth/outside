@@ -6,11 +6,12 @@ using UnityEngine;
 public class IronBoxOpen : MonoBehaviour
 {
     public GameObject BoxItem;
+    public GameObject BoxItemopened;
     public GameObject KeyInventory;
-    public GameObject BoxInventory;
+   
 
-    public GameObject BoxProp;
-    public GameObject BoxInScene;
+   
+    
 
     // Start is called before the first frame update
     void Start()
@@ -29,13 +30,12 @@ public class IronBoxOpen : MonoBehaviour
         if(KeyInventory.activeSelf)
         {
             BoxItem.SetActive(false);
+            BoxItemopened.SetActive(true);
             KeyInventory.SetActive(false);
-            BoxInventory.SetActive(true);
+            
         }
 
-
-        BoxProp.SetActive(true);
-        BoxInScene.SetActive(false);
+        
 
     }
 

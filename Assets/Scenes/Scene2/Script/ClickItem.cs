@@ -7,8 +7,7 @@ public class ClickItem : MonoBehaviour
     public GameObject ItemDisappear;
     public GameObject ItemAppear;
 
-    public GameObject AlbumInScene;
-    public GameObject AlbumProp;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +25,6 @@ public class ClickItem : MonoBehaviour
         ItemAppear.SetActive(true);
         ItemDisappear.SetActive(false);
 
-        AlbumInScene.SetActive(false);
-        AlbumProp.SetActive(true);
+       
     }
 }

@@ -8,10 +8,11 @@ public class RealhistoryInventory : MonoBehaviour
     public GameObject Puzzle;
     
     public GameObject Detect;
-    public GameObject Puzzle1;
-    public GameObject Puzzle2;
-    public GameObject Puzzle3;
+    //public GameObject Puzzle1;
+    //public GameObject Puzzle2;
+    //public GameObject Puzzle3;
     //∆¥ÕºÀÈ∆¨ºÏ≤‚
+    public GameObject Room;
     public GameObject Detect1;
     public GameObject Detect2;
     public GameObject Detect3;
@@ -40,14 +41,21 @@ public class RealhistoryInventory : MonoBehaviour
 
     private void OnMouseDown()
     {
+
+
+        if (Room.activeSelf)
+        { 
         Puzzle.SetActive(false);
         
         Detect.SetActive(true);
-        Countnumber();
+            Countnumber();
 
-        Puzzle.SetActive(false);
+        }
+        
+        
+        
 
-        if (Puzzle1.activeSelf)
+        /*if (Puzzle1.activeSelf)
         {
             Puzzle2.SetActive(true);
             Puzzle1.SetActive(false);
@@ -60,7 +68,7 @@ public class RealhistoryInventory : MonoBehaviour
         else
         {
             Puzzle1.SetActive(true);
-        }
+        }*/
 
 
     }

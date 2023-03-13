@@ -14,6 +14,7 @@ public class GlassesYellowS2 : MonoBehaviour
 
     public static float count = 0;
     public GameObject PuzzlePieces1;
+    private bool collected = false;
 
 
     // Start is called before the first frame update
@@ -24,8 +25,10 @@ public class GlassesYellowS2 : MonoBehaviour
         {
             YellowVersion.SetActive(true);
 
-            if (Room.activeSelf)
-            { PuzzlePieces1.SetActive(true); }
+            if (Room.activeSelf && collected == false)
+            { PuzzlePieces1.SetActive(true);
+                collected = true;
+            }
 
                 count = 1;
 
