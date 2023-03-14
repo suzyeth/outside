@@ -8,27 +8,45 @@ public class CorridorChange : MonoBehaviour
 {
 
     public List<GameObject> Corridors = new List<GameObject>();
-    
-    int index;
+    public GameObject leftbutton;
+    public GameObject rightbutton;
+    int index= 0;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        index = 0;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        /*if (index == Corridors.Count - 1)
+        {
+            rightbutton.SetActive(false);
+        }
+        else 
+        {
+            rightbutton.SetActive(true);
+        }
+
+        if (index == 0)
+        {
+            leftbutton.SetActive(false);
+        }
+        else
+        {
+            leftbutton.SetActive(true);
+        }*/
 
     }
 
     private void OnMouseDown()
     {
         movePage(1);
-
         
+
 
     }
 

@@ -35,7 +35,7 @@ public class GameExit : MonoBehaviour
     public void Close()
     {
         Application.Quit();//ÍË³öÓ¦ÓÃ
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
     }
 
 
